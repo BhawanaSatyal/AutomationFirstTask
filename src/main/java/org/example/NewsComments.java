@@ -17,7 +17,7 @@ public class NewsComments {
         driver.findElement(By.xpath("//a[@href='/nopcommerce-new-release' and @class='read-more']")).click();
         driver.findElement(By.id("AddNewComment_CommentTitle")).sendKeys("Abcde");// click on title textbox and add value
         driver.findElement(By.id("AddNewComment_CommentText")).sendKeys("Amazing!!");// click on comment textbox and add value
-        driver.findElement(By.xpath("//button[@type='submit' and @ name='add-comment']")).click(); // click on new comment
+        driver.findElement(By.xpath("//button[@type='submit' and @name='add-comment']")).click(); // click on new comment
     String text = driver.findElement(By.xpath("//div[@class='result']")).getText();
         System.out.println(text); // output
     }
