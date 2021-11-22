@@ -15,7 +15,7 @@ public class BuildComputer {
         driver.manage().window().fullscreen(); // open window fullscreen
         driver.get("https://demo.nopcommerce.com/");// launch website
         driver.findElement(By.xpath("//div/div/h2/a[@href='/build-your-own-computer']")).click();// click on build your own computer
-        String text = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div[2]/div/div/form/div[2]/div[1]/div[2]/div[1]/h1")).getText();
+        String text = driver.findElement(By.xpath("//form[@id='product-details-form']/div[2]/div[1]/div[2]/div[1]/h1")).getText();
         System.out.println("The final message is displayed as : " +text.toUpperCase(Locale.ROOT));//output
 
 
