@@ -13,8 +13,8 @@ public class NewsComments {
         driver = new ChromeDriver(); //instantiate ChromeDriver class
         driver.manage().window().fullscreen(); // open window fullscreen
         driver.get("https://demo.nopcommerce.com/");// Launch Website
-        driver.findElement(By.xpath("html/body/div[6]/div[4]/div[1]/div[2]/ul/li[2]/a")).click();// click on details
-        driver.findElement(By.xpath("//a[@href='/nopcommerce-new-release' and @class='read-more']")).click();
+        driver.findElement(By.xpath("//li/a[@href='/news']")).click();//click on news
+        driver.findElement(By.xpath("//a[@href='/nopcommerce-new-release' and @class='read-more']")).click(); //click on details
         driver.findElement(By.id("AddNewComment_CommentTitle")).sendKeys("Abcde");// click on title textbox and add value
         driver.findElement(By.id("AddNewComment_CommentText")).sendKeys("Amazing!!");// click on comment textbox and add value
         driver.findElement(By.xpath("//button[@type='submit' and @name='add-comment']")).click(); // click on new comment
